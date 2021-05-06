@@ -1,0 +1,7 @@
+owner = DAI
+controller = DAI
+add_core = DAI
+trade_goods = silk
+fort = 1
+life_rating = 45
+terrain = hanoi

@@ -1,0 +1,17 @@
+﻿wool_cloth_factories;Wool Factories;;;;;;;;x
+wool_cloth_factories_desc;No longer is wool spun in the homes of promising artisans. Now we have the ability to set up factories where textiles can be created at ten times the rate!;;;;;;;;
+wool_mill;Wool Mill;x;;;;;;;
+wool_mill_desc;Wool was the traditional source of fabric until cotton was discovered during the Age of Sail. Despite this, wool is still widely used by the textile industry.;
+organize_laos_VN_title;Centralizing Laotian kingdoms;x;;;;;;;
+organize_laos_VN_desc;The Laotian kingdoms have existed as our vassals for decades, but as our country modernizes, we must also centralize the administration. It's time to bring them in the fold.;
+PROV3275;Lu An;x
+PROV3276;Dak Lak;x
+PROV3277;Tran Ninh;x
+PROV1376;Ha Tinh;x
+DAI_1375;North Annam;x
+DAI_1378;South Annam;x
+DAI;Vietnam;x
+DAI_absolute_monarchy;Dai Viet;x
+DAI_ADJ;Vietnamese;x
+canh_thinh_constitution_title;Canh Thinh Constitution;x
+canh_thinh_constitution_desc;With the backing of the reformist faction within the Imperial Court, the emperor announced the Imperial Decree of $YEAR$ detailing the officially name change of the country from Dai Viet to the Empire of Vietnam; the creation of an officially legislative body called the Imperial Parliament and the creation of the very first constitution of Vietnam.;x

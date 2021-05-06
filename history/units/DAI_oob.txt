@@ -1,0 +1,128 @@
+SIA = {
+	value = -50
+	truce_until = 1840.1.1
+}
+
+army = {
+	name = "Imperial Army"
+	location = 1375
+	regiment = {
+		name= "1. Brigade"
+		type = infantry
+		home = 1375
+	}
+
+	regiment = {
+		name= "2. Brigade"
+		type = infantry
+		home = 1369
+	}
+
+	regiment = {
+		name= "3. Brigade"
+		type = infantry
+		home = 1380
+	}
+
+	regiment = {
+		name= "4. Brigade"
+		type = infantry
+		home = 1370
+	}
+
+	regiment = {
+		name= "5. Brigade"
+		type = infantry
+		home = 1371
+	}
+
+	regiment = {
+		name= "6. Brigade"
+		type = artillery
+		home = 1372
+	}
+
+	regiment = {
+		name= "7. Brigade"
+		type = artillery
+		home = 1373
+	}
+
+	regiment = {
+		name= "8. Brigade"
+		type = artillery
+		home = 1376
+	}
+
+	regiment = {
+		name= "9. Brigade"
+		type = cavalry
+		home = 1377
+	}
+
+}
+navy = {
+	name = "1st Squadron"
+	location = 1375
+	ship = {
+		name= "Thanh Hoa"
+		type = manowar
+	}
+
+	ship = {
+		name= "Quy Nhon"
+		type = manowar
+	}
+
+	ship = {
+		name= "Saigon"
+		type = manowar
+	}
+
+	ship = {
+		name= "Hue"
+		type = frigate
+	}
+	ship = {
+		name= "Hai Phong"
+		type = frigate
+	}
+	ship = {
+		name= "Ha Tinh"
+		type = frigate
+	}
+	ship = {
+		name= "Da Nang"
+		type = frigate
+	}
+	ship = {
+		name= "Binh Dinh"
+		type = frigate
+	}
+	ship = {
+		name= "Vinh"
+		type = frigate
+	}
+	ship = {
+		name= "1st Transport"
+		type = clipper_transport
+	}
+	ship = {
+		name= "2nd Transport"
+		type = clipper_transport
+	}
+	ship = {
+		name= "3rd Transport"
+		type = clipper_transport
+	}
+	ship = {
+		name= "4th Transport"
+		type = clipper_transport
+	}
+	ship = {
+		name= "5th Transport"
+		type = clipper_transport
+	}
+
+}
+

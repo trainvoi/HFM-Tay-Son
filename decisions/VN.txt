@@ -1,0 +1,247 @@
+political_decisions = {
+	rename_vietnamese = {
+		potential = {
+			tag = RUS
+			NOT = { has_global_flag = russian_vladivostok }
+		}
+		
+		allow = { state_n_government = 1 }
+		
+		effect = {
+			1081 = {
+				change_province_name = "Albazino"
+				add_core = RUS
+			}
+			set_global_flag = russian_vladivostok
+			clr_global_flag = japanese_enkaishu
+			clr_global_flag = binhai_bianjiangqu
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	organize_laos_VN = {
+		picture = form_laos
+		potential = {
+		    NOT = { has_global_flag = laos_organized }
+			civilized = yes
+			tag = DAI
+		}
+		
+		
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			AND = {
+			    owns = 1356
+				owns = 1357
+				owns = 1360
+				owns = 1361
+				owns = 1362
+				owns = 1363
+			}
+		}
+		
+		effect = {
+			set_global_flag = laos_organized
+			prestige = 5
+			LUA = {
+				all_core = {
+					add_core = LXA
+					remove_core = LUA
+				}
+			}
+			WIA = {
+				all_core = {
+					add_core = LXA
+					remove_core = WIA
+				}
+			}
+			CHK = {
+				all_core = {
+					add_core = LXA
+					remove_core = CHK
+				}
+			}
+			any_owned = {
+				limit = { is_core = LXA }
+				add_province_modifier = {
+					name = colonial_exploitation
+					duration = 1095
+				}
+			}
+			1358 = { add_core = LXA } 1359 = { add_core = LXA }
+			LXA = {
+				tech_school = developing_tech_school
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	laos_integration_act = {
+		picture = form_laos
+		potential = {
+			tag = SIA
+			CHK = { exists = yes vassal_of = SIA }
+			NOT = {
+				has_country_flag = champassak_integrated
+			}
+		}
+		allow = {
+			war = no
+			civilized = yes
+			is_our_vassal = CHK
+			CHK = { OR = { NOT = { part_of_sphere = yes } in_sphere = THIS } }
+		}
+		
+		effect = {
+			badboy = 1
+			inherit = CHK
+			set_country_flag = champassak_integrated
+		}
+	}
+	cambodia_integration_act = {
+		picture = form_laos
+		potential = {
+			tag = SIA
+			CHK = { exists = yes vassal_of = SIA }
+			NOT = {
+				has_country_flag = champassak_integrated
+			}
+		}
+		allow = {
+			war = no
+			civilized = yes
+			is_our_vassal = CHK
+			CHK = { OR = { NOT = { part_of_sphere = yes } in_sphere = THIS } }
+		}
+		
+		effect = {
+			badboy = 1
+			inherit = CHK
+			set_country_flag = champassak_integrated
+		}
+	}
+	
+	
+	canh_thinh_constitution = {
+		picture = peking_convention
+		potential = {
+			tag = DAI
+			civilized = yes
+			government = absolute_monarchy
+			NOT = { has_country_flag = enacted_canh_thinh_constitution }
+		}
+		
+		allow = {
+			war = no
+			state_n_government = 1
+			plurality = 20
+		}
+		
+		effect = {
+			set_country_flag = enacted_canh_thinh_constitution
+			remove_country_modifier = uncivilized_isolationism
+			prestige = 10
+			#political_reform = wealth_weighted_voting
+			random_owned = {
+				limit = {
+					owner = { political_parties = underground_parties }
+				}
+				owner = {
+					political_reform = harassment
+				}
+			}
+			
+			random_owned = {
+				limit = {
+					owner = { debt_law = peonage }
+				}
+				owner = {
+					political_reform = debtors_prisons
+				}
+			}
+			
+			random_owned = {
+				limit = {
+					owner = { debt_law = serfdom }
+				}
+				owner = {
+					political_reform = debtors_prisons
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { debt_law = yes_slavery }
+				}
+				owner = {
+					political_reform = no_slavery
+				}
+			}
+			random_owned = {
+				owner = {
+					treasury = 150000
+					machine_parts = 400
+					steel = 600 #was iron
+					cement = 600
+					random_owned = {
+						limit = {
+							province_id = 1380
+							state_scope = { NOT = { has_building = fabric_factory has_building = liquor_distillery } }
+						}
+						owner = {  
+							capital = 1380 
+							build_factory_in_capital_state = fabric_factory
+							build_factory_in_capital_state = liquor_distillery
+						}
+					}
+					random_owned = {
+						limit = {
+							province_id = 1374
+							state_scope = { NOT = { has_building = liquor_distillery } }
+						}
+						owner = {  
+							capital = 1374
+							build_factory_in_capital_state = liquor_distillery 
+						}
+					}
+					random_owned = { limit = { province_id = 1369 } THIS = { capital = 1369 } } #Hanoi
+					activate_technology = high_pressure_steam_engine
+					activate_technology = freedom_of_trade
+					activate_technology = puddling
+				}
+			}
+			government = prussian_constitutionalism
+			any_pop = { militancy = -2 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	occupy_guangxi = {
+		potential = {
+		    civilized = yes
+			tag = DAI
+		}
+	
+		allow = {
+			war = no
+		}
+	
+		effect = {
+		    1502 = { secede_province = THIS }
+			1503 = { secede_province = THIS }
+			1504 = { secede_province = THIS }
+			1495 = { add_core = GXI secede_province = THIS }
+			1499 = { add_core = GXI secede_province = THIS }
+			2632 = { add_core = GXI secede_province = THIS }
+			GXI = {
+				tech_school = developing_tech_school
+				civilized = yes
+				#set_country_flag = created_externally
+			}
+			release_vassal = GXI
+			inherit = GXI
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

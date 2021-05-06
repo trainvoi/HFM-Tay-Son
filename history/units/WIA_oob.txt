@@ -1,0 +1,16 @@
+army = {
+	name = "Army of Wiang Chhan"
+	location = 1357
+	regiment = {
+		name= "1st Division"
+		type = infantry
+		home = 1357
+	}
+
+	regiment = {
+		name= "2nd Division"
+		type = infantry
+		home = 1357
+	}
+}
+
