@@ -192,7 +192,6 @@ mountain;Montane Grassland;;;;;;;;;;;;;;;;;x
 montane_tundra;Alpine Tundra;;;;;;;;;;;;;;;;;x
 montane_forest;Montane Forest;;;;;;;;;;;;;;;;;x
 savanna;Savanna;;;;;;;;;;;;;;;;;;;;;;;;x
-PROV1377;Da Nang;;;;;;;;;;;;;;;;;;x;;;;
 PROV1720;Bechar;;;;;;;;;;;;;;;;;;x;;;;
 PROV1714;Santa Rosa;;;;;;;;;;;;;;;;;;x;;;;
 PROV2631;Unalakleet;;;;;;;;;;;;;;;;;;x;;;;
@@ -345,7 +344,6 @@ PROV2606;Balkhash;;;;;;;;;;;;;;;;;;;;;;;x
 ARG_2384;Córdoba de Argentina;;;;;;;;;;;;;;;;;;;;;;;x
 ARG_2393;La Pampa;;;;;;;;;;;;;;;;;;;;;;;x
 PROV1391;Kota Kubang Labu;;;;;;;;;;;;;;;;;;;;;;;x
-PROV1382;Hà Tiên;;;;;;;;;;;;;;;;;;;;;;;x
 RUS_1048;Circassia;;;;;;;;;;;;;;;;;;;;;;;x
 PROV1049;Ubykhia;;;;;;;;;;;;;;;;;;;;;;;x
 PROV900;Antakya;;;;;;;;;;;;;;;;;;;;;;;x
@@ -491,7 +489,6 @@ SIA_1352;Pattani;;;;;;;;;;;;x
 SIA_1355;Shan;;;;;;;;;;;;x
 LUA_1356;Laos;;;;;;;;;;;;x
 SIA_1358;Isan;;;;;;;;;;;;x
-PROV1360;Xiangabouli;;;;;;;;;;;;x
 DAI_1369;Tonkin;;;;;;;;;;;;x
 DAI_1380;Cochinchina;;;;;;;;;;;;x
 ENG_1384;Southern Malaya;;;;;;;;;;;;x
