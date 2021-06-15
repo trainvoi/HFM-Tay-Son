@@ -1315,7 +1315,7 @@ political_decisions = {
 				}
 				AND = {
 					owns = 1375
-					1375 = { NOT = { trade_goods = coffee } }
+					1375 = { NOT = { trade_goods = tea } }
 				}
 				AND = {
 					owns = 2064
@@ -1340,11 +1340,11 @@ political_decisions = {
 		effect = {
 			set_country_flag = cashcrops_in_the_colonies
 			random_owned = { limit = { province_id = 1380 NOT = { trade_goods = coffee } } trade_goods = coffee }
-			random_owned = { limit = { province_id = 1381 NOT = { trade_goods = coffee } } trade_goods = coffee }
-			random_owned = { limit = { province_id = 1375 NOT = { trade_goods = coffee } } trade_goods = coffee }
-			random_owned = { limit = { province_id = 1378 NOT = { trade_goods = tea } } trade_goods = tea }
-			random_owned = { limit = { province_id = 1377 NOT = { trade_goods = tea } } trade_goods = tea }
-			random_owned = { limit = { province_id = 1379 NOT = { trade_goods = tea } } trade_goods = tea }
+			#random_owned = { limit = { province_id = 1381 NOT = { trade_goods = coffee } } trade_goods = coffee }
+			random_owned = { limit = { province_id = 1375 NOT = { trade_goods = tea } } trade_goods = tea }
+			#random_owned = { limit = { province_id = 1378 NOT = { trade_goods = tea } } trade_goods = tea }
+			#random_owned = { limit = { province_id = 1377 NOT = { trade_goods = tea } } trade_goods = tea }
+			#random_owned = { limit = { province_id = 1379 NOT = { trade_goods = tea } } trade_goods = tea }
 			random_owned = { limit = { province_id = 2064 NOT = { trade_goods = tea } } trade_goods = tea }
 			random_owned = { limit = { province_id = 2054 NOT = { trade_goods = coal } } trade_goods = coal }
 		}

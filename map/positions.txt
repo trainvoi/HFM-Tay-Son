@@ -55294,11 +55294,11 @@
 
 1356 = {
     text_position = {
-        x = 4397.960000
-        y = 1099.880000
+        x = 4397.410000
+        y = 1095.480000
     }
 
-    text_scale = 2.2
+    text_scale = 2.4
     unit = {
         x = 4409.180000
         y = 1088.660000
@@ -55373,7 +55373,7 @@
 
 1358 = {
     text_position = {
-        x = 4422.720000
+        x = 4420.720000
         y = 1039.360000
     }
 
@@ -55712,18 +55712,23 @@
 } # Kampot
 
 1367 = {
+    text_position = {
+        x = 4419.263333
+        y = 947.050000
+    }
+
+    text_rotation = 5.176037
+    text_scale = 2.55
     unit = {
         x = 4421.000000
         y = 944.000000
     }
 
-    text_position = {
-        x = 4423.399902
-        y = 938.200012
+    factory = {
+        x = 4419.000000
+        y = 956.099976
     }
 
-    text_rotation = 6.283184
-    text_scale = 2.799999
     building_construction = {
         x = 4415.100098
         y = 951.000000
@@ -55734,25 +55739,20 @@
         y = 932.000000
     }
 
-    factory = {
-        x = 4419.000000
-        y = 956.099976
-    }
-
     building_position = {
         fort = {
             x = 4424.100098
             y = 929.000000
         }
 
-        naval_base = {
-            x = 4414.600098
-            y = 937.400024
-        }
-
         railroad = {
             x = 4424.000000
             y = 940.000000
+        }
+
+        naval_base = {
+            x = 4414.600098
+            y = 937.400024
         }
 
     }
@@ -55802,11 +55802,11 @@
 
 1369 = {
     text_position = {
-        x = 4455.500000
-        y = 1097.699951
+        x = 4453.226667
+        y = 1099.150000
     }
 
-    text_scale = 2.999999
+    text_scale = 2.75
     unit = {
         x = 4454.000000
         y = 1102.000000
@@ -55927,25 +55927,25 @@
 } # Son La
 
 1372 = {
+    text_position = {
+        x = 4427.000000
+        y = 1112
+    }
+
+    text_scale = 3.1
     unit = {
         x = 4428.000000
         y = 1113.000000
     }
 
-    text_position = {
-        x = 4427.000000
-        y = 1106.099976
-    }
-
-    text_scale = 3.499999
-    building_construction = {
-        x = 4438.000000
-        y = 1106.900024
-    }
-
     factory = {
         x = 4422.299805
         y = 1124.000000
+    }
+
+    building_construction = {
+        x = 4438.000000
+        y = 1106.900024
     }
 
     building_position = {
@@ -55959,17 +55959,22 @@
 } # Lang Son
 
 1373 = {
+    text_position = {
+        x = 4470.700195
+        y = 1108.000000
+    }
+
+    text_scale = 3.199999
     unit = {
         x = 4470.000000
         y = 1114.000000
     }
 
-    text_position = {
-        x = 4470.700195
-        y = 1109.000000
+    factory = {
+        x = 4465.000000
+        y = 1124.000000
     }
 
-    text_scale = 3.199999
     building_construction = {
         x = 4463.000000
         y = 1118.000000
@@ -55978,11 +55983,6 @@
     military_construction = {
         x = 4471.100098
         y = 1107.000000
-    }
-
-    factory = {
-        x = 4465.000000
-        y = 1124.000000
     }
 
     building_position = {
@@ -56098,10 +56098,11 @@
 
 1376 = {
     text_position = {
-        x = 4463.715000
-        y = 1049.575000
+        x = 4460.760000
+        y = 1048.770000
     }
 
+    text_rotation = 5.579456
     text_scale = 2.700000
     unit = {
         x = 4459.000000
@@ -56343,11 +56344,11 @@
 
 1381 = {
     text_position = {
-        x = 4495.500000
-        y = 942.760000
+        x = 4496.100000
+        y = 942.400000
     }
 
-    text_rotation = 0.494957
+    text_rotation = 0.575538
     text_scale = 2.6
     unit = {
         x = 4503.780000
@@ -120433,12 +120434,12 @@
 
 3277 = {
     text_position = {
-        x = 4429.740000
-        y = 1085.490000
+        x = 4426.520000
+        y = 1081.990000
     }
 
-    text_rotation = 0.221924
-    text_scale = 2.6
+    text_rotation = 0.625485
+    text_scale = 2.7
     unit = {
         x = 4422.250000
         y = 1081.850000

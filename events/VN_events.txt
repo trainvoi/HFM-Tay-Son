@@ -180,7 +180,7 @@ province_event = {
 		OR = {
 			AND = {
 				OR = {
-					province_id = 1372 #Son La
+					province_id = 1372 #Lao Cai
 				}
 				year = 1860
 			}
@@ -223,65 +223,5 @@ province_event = {
 		name = "EVTOPTA199037"
 		trade_goods = sulphur
 		add_province_modifier = { name = switched_production duration = 365 }
-	}
-}
-province_event = {
-
-	id = 800002
-	title = "EVTNAME199037"
-	desc = "EVTDESC199037"
-
-	trigger = {		
-		OR = {
-			AND = {
-				year = 1875
-				province_id = 132		# Houston
-			}
-			AND = {
-				year = 1882
-				OR = {
-					province_id = 90		# San Diego
-					province_id = 133		# Austin
-				}
-			}
-		}
-		not = { trade_goods = oil }
-		NOT = { has_province_modifier = switched_production }
-		owner = {
-			war = no
-			OR = {
-				any_owned_province = {
-					trade_goods = oil
-					NOT = { unemployment_by_type = { value = 0.05 type = labourers } }
-				}
-				any_neighbor_country = {
-					war = no
-					any_owned_province = {
-						trade_goods = oil
-						NOT = { unemployment_by_type = { value = 0.05 type = labourers } }
-					}
-				}
-				any_greater_power = {
-					war = no
-					any_owned_province = {
-						trade_goods = oil
-						NOT = { unemployment_by_type = { value = 0.05 type = labourers } }
-					}
-				}
-			}
-		}
-	}
-
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		months = 36
-	}
-
-
-	option = {
-		name = "EVTOPTA1109"
-		trade_goods = oil
-		life_rating = 3
 	}
 }

@@ -635,14 +635,13 @@ political_decisions = {
 		effect = {
 			set_global_flag = commodities_in_south_east_asia_placed
 			#Vietnam
-			1369 = { trade_goods = tea }
-			1370 = { trade_goods = coffee }
-			1371 = { trade_goods = coffee }
-			1376 = { trade_goods = coffee }
-			1375 = { trade_goods = tobacco }
+			1374 = { trade_goods = tobacco }
+			1375 = { trade_goods = tea }
+			1376 = { trade_goods = tobacco }
+			1380 = { trade_goods = coffee }
 			#Thailand
 			1346 = { trade_goods = coffee }
-			1358 = { trade_goods = coffee }
+			1351 = { trade_goods = coffee }
 		}
 		
 		ai_will_do = { factor = 1 }

@@ -1,23 +1,23 @@
 political_decisions = {
-	rename_vietnamese = {
-		potential = {
-			tag = RUS
-			NOT = { has_global_flag = russian_vladivostok }
-		}
-		
-		allow = { state_n_government = 1 }
-		
-		effect = {
-			1081 = {
-				change_province_name = "Albazino"
-				add_core = RUS
-			}
-			set_global_flag = russian_vladivostok
-			clr_global_flag = japanese_enkaishu
-			clr_global_flag = binhai_bianjiangqu
-		}
-		ai_will_do = { factor = 1 }
-	}
+	#rename_vietnamese = {
+	#	potential = {
+	#		tag = RUS
+	#		NOT = { has_global_flag = russian_vladivostok }
+	#	}
+	#	
+	#	allow = { state_n_government = 1 }
+	#	
+	#	effect = {
+	#		1081 = {
+	#			change_province_name = "Albazino"
+	#			add_core = RUS
+	#		}
+	#		set_global_flag = russian_vladivostok
+	#		clr_global_flag = japanese_enkaishu
+	#		clr_global_flag = binhai_bianjiangqu
+	#	}
+	#	ai_will_do = { factor = 1 }
+	#}
 	
 	organize_laos_VN = {
 		picture = form_laos
@@ -26,8 +26,6 @@ political_decisions = {
 			civilized = yes
 			tag = DAI
 		}
-		
-		
 		allow = {
 			war = no
 			revolution_n_counterrevolution = 1
@@ -40,7 +38,6 @@ political_decisions = {
 				owns = 1363
 			}
 		}
-		
 		effect = {
 			set_global_flag = laos_organized
 			prestige = 5
@@ -69,60 +66,65 @@ political_decisions = {
 					duration = 1095
 				}
 			}
-			1358 = { add_core = LXA } 1359 = { add_core = LXA }
+			1358 = { add_core = LXA }
+			1359 = { add_core = LXA }
 			LXA = {
 				tech_school = developing_tech_school
 			}
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
 	laos_integration_act = {
 		picture = form_laos
 		potential = {
-			tag = SIA
-			CHK = { exists = yes vassal_of = SIA }
+			tag = DAI
+			CHK = { exists = yes vassal_of = DAI }
+			LUA = { exists = yes vassal_of = DAI }
+			WIA = { exists = yes vassal_of = DAI }
 			NOT = {
-				has_country_flag = champassak_integrated
+				has_country_flag = laos_integrated
 			}
 		}
 		allow = {
 			war = no
 			civilized = yes
 			is_our_vassal = CHK
+			is_our_vassal = LUA
+			is_our_vassal = WIA
+			WIA = { OR = { NOT = { part_of_sphere = yes } in_sphere = THIS } }
+			LUA = { OR = { NOT = { part_of_sphere = yes } in_sphere = THIS } }
 			CHK = { OR = { NOT = { part_of_sphere = yes } in_sphere = THIS } }
 		}
 		
 		effect = {
-			badboy = 1
+			badboy = 3
 			inherit = CHK
-			set_country_flag = champassak_integrated
+			inherit = LUA
+			inherit = WIA
+			set_country_flag = laos_integrated
 		}
 	}
 	cambodia_integration_act = {
 		picture = form_laos
 		potential = {
-			tag = SIA
-			CHK = { exists = yes vassal_of = SIA }
+			tag = DAI
+			CAM = { exists = yes vassal_of = DAI }
 			NOT = {
-				has_country_flag = champassak_integrated
+				has_country_flag = cambodia_integrated
 			}
 		}
 		allow = {
 			war = no
 			civilized = yes
-			is_our_vassal = CHK
+			is_our_vassal = CAM
 			CHK = { OR = { NOT = { part_of_sphere = yes } in_sphere = THIS } }
 		}
-		
 		effect = {
 			badboy = 1
-			inherit = CHK
-			set_country_flag = champassak_integrated
+			inherit = CAM
+			set_country_flag = cambodia_integrated
 		}
 	}
-	
-	
 	canh_thinh_constitution = {
 		picture = peking_convention
 		potential = {
@@ -244,4 +246,25 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
+	
+	DAI_setup = {
+		potential = {
+			tag = DAI
+			always = no
+		}
+		
+		allow = {
+			tag = DAI
+		}
+		
+		effect = {
+			3276 = { secede_province = DAI }
+			1378 = { secede_province = DAI }
+			treasury = 100000
+			1369 = { any_pop = { literacy = 0.2 } }
+			1375 = { any_pop = { literacy = 0.2 } }
+			1380 = { any_pop = { literacy = 0.2 } }
+		}
+	}
+	
 }

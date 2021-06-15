@@ -3,3 +3,4 @@ controller = CHK
 add_core = CHK
 trade_goods = tobacco
 life_rating = 33
+terrain = plains

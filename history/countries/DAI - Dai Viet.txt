@@ -10,7 +10,7 @@ non_state_culture_literacy = 0.04
 prestige = 5
 
 # Political reforms
-slavery = yes_slavery
+slavery = no_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting
 public_meetings = no_meeting
@@ -30,7 +30,7 @@ school_reforms = no_schools
 
 #New Reforms
 conscription = two_year_draft
-debt_law = serfdom
+debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
@@ -39,6 +39,8 @@ centralization = unitary
 colonial_policy = no_colonies 
 
 set_country_flag = mahayana_country
+
+decision = DAI_setup
 
 ruling_party = DAI_conservative
 upper_house = {
